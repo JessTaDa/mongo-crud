@@ -4,7 +4,7 @@ const { Schema } = mongoose;
 
 const ingredientSchema = new Schema({
 	name: {
-		type: String, 
+		type: String,
 		trim: true // name="    Sugar "
 	},
 	created_at: {
@@ -16,16 +16,3 @@ const ingredientSchema = new Schema({
 const Ingredient = mongoose.model('Ingredient', ingredientSchema);
 
 module.exports = Ingredient;
-
-
-
-
-
-
-
-
-
-
-
-
-
